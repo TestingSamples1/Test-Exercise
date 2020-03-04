@@ -1,0 +1,39 @@
+Introduction
+These tests are written as Gherkin features- using selenium, specflow and c# in visual studio 2019.
+
+Prerequisites to run the project
+Before you continue, ensure you have met the following requirements:
+- you have installed the latest version of Visual Studio (2019)
+- and make sure SpecFlow extension for Visual Studio is enabled
+
+Setup
+-Unzip the folder and save in local machine
+-Build the solution- all the nuget packages will restore.
+
+Executing SpecFlow Acceptance Tests
+-open the Unit Test Explorer- you can see all the tests generated from the feature files.
+-Select the scenario from unit test explorer and run test
+
+Tests
+For demo purpose i have automated 2 scenarios
+1) Signup feature-  open the feature file for signup via unit test explorer, select 'signup' scenario and run.
+2) UI fetaure- open the feature file for UI via unit test explorer, select 'Validate navigation for news page' scenario and run.
+
+Feature Tags
+The following tags are used:
+- Regression
+-Smoke 
+
+Source Code Folders
+1. Scenario- All the fetaure files are under this folder.
+2. Steps- All the sceario step definitions are under this folder.
+3. Test Data- Some of the dynamic test data are coming form this folder.
+4. Pages- Followed page object model(POM) to create this project so all the pages are under thsi folder.
+5. Common- Created all the common files under this folder for code reusablilty.
+6. Core UI- All the core UI functions are created under this folder.(Intializing browser, Launching webdriver, Dispose driver etc).
+7. Extension- All the extension methods are under this folder(web element extension).
+8. App.config- All the config files(url, browser etc are configured through app config)
+9. Hooks- It run before or after each scenario/feature.
+10. Pickles.Ps1- It's powershell script to generate all the documents in different format, I have attached word and HTML format. Pickles is a Living Documentation generator- it takes your Specification (written in Gherkin, with Markdown descriptions) in a variety of formats.
+
+
